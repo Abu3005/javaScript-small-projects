@@ -1,0 +1,412 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   
+}
+html {
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+body {
+   font-size: 1.6rem;
+   font-family: sans-serif;
+   position: relative;
+}
+.win {
+   background-color: yellowgreen;
+   
+}
+.body {
+   width: 100%;
+   height: 100vh;
+   padding-top: 8rem;
+}
+
+/*********************************************/
+            /* Overlay */
+/*********************************************/
+
+.over {
+   position: fixed;
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   background-color: rgb(189, 98, 98);
+   display: none;
+}
+.over ul {
+   display: flex;
+   gap: 8rem;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}
+.over ul li {
+   font-size: 4rem;
+   list-style: none;
+   
+}
+.over ul a:link, 
+.over ul a:visited {
+   color: black;
+   text-decoration: none;
+   transition: all 1px;
+   background-color: #75646a;
+   border-radius: 2rem;
+   padding: 1rem;
+}
+   
+
+.over ul a:hover, 
+.over ul a:active {
+   color: #75646a;
+   box-shadow: inset 0px 0px 4px black;
+   background-color: white;
+   
+}
+
+/*********************************************/
+/*********************************************/
+/*********************************************/
+section {
+   width: 80%;
+   margin: 0 auto;
+   border: 2px solid rgb(9, 9, 29);
+}
+
+   
+.links {
+   display: flex;
+   font-size: 1.7rem;
+   list-style: none;
+   
+   align-items: center;
+   justify-content: space-around;
+   padding: 1rem;
+   background-color: rgb(13, 13, 32);
+  
+}
+.header {
+   margin-bottom: 2rem;
+   position: fixed;
+   width: 100%;
+}
+.my {
+   text-align: center;
+   font-size: 7rem;
+   padding-top: 7rem;
+   
+   margin-bottom: 2.5rem;
+}
+.how {
+   font-size: 3rem;
+   padding-top: 6rem;
+   margin-left: 12rem;
+   margin-bottom: 4rem;
+   border-bottom: 2px solid rgb(9, 9, 29);
+   display: inline-block;
+}
+.about {
+   margin-left: 2rem;
+   margin-bottom: 2rem;
+   font-size: 1.7rem;
+}
+.about ul {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   list-style:outside;
+   line-height: 1.4;
+}
+.links a:link, 
+.links a:visited {
+   color: white;
+   text-decoration: none;
+   transition: all 1px;
+   background-color: black;
+   border-radius: 2px;
+}
+.links a:hover, 
+.links a:active {
+   color: #75646a;
+   box-shadow: inset 0px 0px 4px black;
+   background-color: white;
+}
+.again {
+   padding: 1rem 2rem;
+   background-color: rgb(9, 9, 29);
+   color: white;
+   font-size: 2rem;
+}
+
+
+
+.guess {
+   text-align: center;
+   font-size: 5rem;
+   margin-top: 3rem;
+   word-spacing: 1rem;
+   margin-bottom: 3rem;
+}
+
+.top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.ul {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   
+   margin-left: 4rem;
+   margin-bottom: 6rem;
+   margin-right: 3rem;
+}
+.ul li {
+   font-size: 2rem;
+}
+
+h6 {
+   font-size: 1.7rem;
+   background: rgb(9, 9, 29);
+   color: white;
+   padding: 1rem 2rem;
+}
+.top p {
+   letter-spacing: 0.2rem;
+}
+.line-number {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.line {
+   width: 100%;
+   height: 1rem;
+   background-color: rgb(9, 9, 29);
+}
+.number {
+   font-size: 7rem;
+   color: white;
+   background-color: rgb(9, 9, 29);
+   padding: 0.7rem 4rem;
+}
+.last {
+   margin-top: 8rem;
+   display: flex;
+   justify-content: space-around;
+}
+.check-number {
+   font-weight: 500;
+   width: 13rem;
+   font-size: 7rem;
+   padding: 0.3rem 0.3rem;
+   margin-bottom: 2rem;
+   border: 1px solid rgb(9, 9, 29);
+   text-align: center;
+   
+}
+.button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.check {
+   padding: 1rem 2rem;
+   font-weight: 500;
+   background-color: rgb(9, 9, 29);
+   color: white;
+  
+}
+.right {
+   font-size: 2rem;
+   flex-basis: 20rem;
+}
+
+.k {
+   margin-bottom: 2rem;
+   font-size: 7rem;
+   padding: 0.6rem 3rem;
+   box-shadow: inset 0 0 0 3px rgb(9, 9, 29);
+}
+.correct {
+   margin-bottom: 6rem;
+}
+
+#high {
+   margin-top: 2rem;
+}
+.reply {
+   color: white;
+   background-color: black;
+   font-size: 1.8rem;
+}
+
+.yes {
+   color: black;
+   font-size: 2rem;
+   cursor: pointer;
+   
+}
+.header ul li:nth-of-type(4) {
+   display: none;
+}
+
+.yes:link, 
+.yes:visited {
+   color: white;
+   text-decoration: none;
+   transition: all 1px;
+   background-color: black;
+   border-radius: 2px;
+}
+.yes:hover, 
+.yes:active {
+   color: white;
+   box-shadow: inset 0px 0px 4px black;
+   background-color: black;
+}
+
+.over {
+   position: fixed;
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   background-color: rgb(189, 98, 98);
+   display: none;
+}
+.over ul {
+   display: flex;
+   gap: 8rem;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}
+.over ul li {
+   font-size: 4rem;
+   list-style: none;
+   
+}
+.over ul a:link, 
+.over ul a:visited {
+   color: black;
+   text-decoration: none;
+   transition: all 1px;
+   background-color: #75646a;
+   border-radius: 2rem;
+   padding: 1rem;
+}
+   
+
+.over ul a:hover, 
+.over ul a:active {
+   color: #75646a;
+   box-shadow: inset 0px 0px 4px black;
+   background-color: white;
+   
+}
+
+
+/***************************************************/
+                   /* 993rem */
+/***************************************************/
+/* @media (max-width: 62em) {
+   .ul {
+     
+   }
+} */
+
+
+/***************************************************/
+                   /* 694rem */
+/***************************************************/
+
+
+
+
+@media (max-width: 43.5em) {
+   html {
+   font-size: 56.25%;
+   }
+   section {
+      width: 90%;
+      margin: 0 auto;
+      border: 2px solid #09091d;
+   }
+
+   .header ul li:nth-of-type(4) {
+      display: block;
+   }
+   .hide {
+      display: none;
+      margin-left: auto;
+   }
+   .links {
+   font-size: 1.7rem;
+   justify-content:flex-end;
+   padding-right: 4rem;
+   }
+   .how {
+      text-align: center;
+      margin-left: 0;
+      display:block;
+   }
+}
+
+
+
+
+/***************************************************/
+                   /* 448px screen */
+/***************************************************/
+@media (max-width: 28em) {
+   section {
+      width: 90%;
+      margin: 0 auto;
+      border: 1px solid rgb(9, 9, 29);
+   }
+   .my {
+      font-size: 5rem;
+   }
+   .guess {
+      font-size: 4rem;
+   }
+}
+
+@media (max-width: 25em) {
+   html {
+   font-size: 53.125%;
+}
+}
+
+
+
+
+
+
+
+
+/***************************************************/
+                   /**/
+/***************************************************/
+/***************************************************/
+                   /**/
+/***************************************************/
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="fontawesome/css/all.css">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header class="header">
+      <ul class="links">
+         <li class="hide"><a target="_blank" href="../Two-dice-guess-game/index.html">Two players' game</a></li>
+         <li class="hide"><a href="#body">Guess my number</a></li>
+         <li class="hide"><a href="#">Game 3</a></li>
+         <li><button><i class="fa-solid yes fa-bars"></i></button></li>
+         
+      </ul>
+   </header>
+   <div class="over">
+      <ul>
+         <li><a target="_blank" href="../Two-dice-guess-game/index.html">Two players' game</a></li>
+         <li><a href="#body">Guess my number</a></li>
+         <li><a href="#">Game 3</a></li>
+      </ul>
+   </div>
+   <div>
+     
+      <h1 class="my">GUESS MY NUMBER</h1>
+      <h3 class="how">How to play the game</h3>
+      <ul class="ul">
+         <li>From the begining of the game, your score is 20</li>
+         <li>By guessing a number, your score get decreased by 1 for each guess if you miss the correct guess</li>
+         <li>At your right hand, there is a red text that can guide you to the correct answer</li>
+         <li>if you get the correct answer, then you can play again via the button at your top-left hand</li>
+      </ul>
+   </div>
+   <div id="body" class="body">
+      
+      <section class="green">
+         <div class="top">
+            <button class="again">Again !</button>
+            <p>(Between 1 and 20)</p>
+         </div>
+         
+         <h3 class="guess">Guess My Number !</h3>
+         
+         <div class="line-number">
+            <div class="line"></div>
+            <p class="number">?</p>
+            <div class="line"></div>
+         </div>
+         
+         <div class="last">
+            <div id="check-number">
+               <input type="number" class="check-number" >
+               <div class="button">
+                  <button class="check">check !</button>
+               </div>
+            </div>
+            <div class="right">
+               <div class="correct">
+                  <p class="reply">Enter ur guess</p>
+               </div>
+               <div>
+                  <p >Score: <span class="scor">0</span></p>
+               </div>
+               <div>
+                  <p id="high">High score: <span class="high">0</span></p>
+               </div>
+            </div>
+         </div>
+
+      </section>
+      
+   </div>
+   <script src="script.js"></script>
+   <!-- <script src="test.js"></script> -->
+</body>
+</html>
